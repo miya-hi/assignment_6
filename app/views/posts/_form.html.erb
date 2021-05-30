@@ -1,0 +1,8 @@
+<%= form_with(model: @post, local: true) do |form| %>
+  <div class="post_content">
+    <div class="now"><%= form.label :今なにしてる？ %></div>
+    <div><%= form.text_field :content %></div>
+  </div>
+  <%= form.submit "投稿" %>
+<% end %>
+<p class="move_button"><%= link_to "ツイート一覧画面に戻る", posts_path %></p>
