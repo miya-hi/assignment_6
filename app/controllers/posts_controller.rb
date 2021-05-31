@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     end
   end
   def confirm
-    @post = Post.new(blog_params)
+    @post = Post.new(post_params)
     render :new if @post.invalid?
   end
   def edit
