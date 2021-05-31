@@ -1,3 +1,92 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.wrapper {
+  width: 700px;
+  font-size: 62.5%;
+  margin: 0 auto;
+  border:1px solid #9FA0A0;
+}
+.header {
+  display: flex;
+  padding: 0;
+}
+.logo {
+  width: 130px;
+  text-align:center;
+  padding:20px 0;
+  font-size: 1rem;
+  color: #FFF;
+  border:1px solid #0066FF;
+  background-color: #0066FF;
+}
+.heading {
+  width: 570px;
+  text-align:center;
+  padding:20px 0;
+  font-size: 1.2rem;
+}
+.notice {
+  height: 20px;
+  font-size: 1rem;
+  color: #9FA0A0;
+}
+article {
+  border:1px solid #9FA0A0;
+  top: 70px;
+}
+.content {
+  width: 600px;
+  height: 50px;
+  margin: 0;
+  padding: 5px;
+  font-size: 1rem;
+  vertical-align: top;
+  border:1px solid #9FA0A0
+}
+table {
+  margin : 0;
+  padding: 0;
+}
+tr {
+  margin: 0;
+  padding: 0;
+}
+td {
+  margin: 0;
+  padding: 0;
+}
+.edit delate {
+
+}
+.now {
+  font-size: 1rem;
+}
+input[type="text"] {
+  width: 600px;
+  height: 50px;
+}
+.button a{
+  font-size: 0.8rem;
+  margin: 1px;
+  padding: 5px;
+  text-decoration: none;
+  color: #FFF;
+  background-color: #0066FF;
+}
+.move_button a{
+  font-size: 0.9rem;
+  margin: 1px;
+  padding: 5px;
+  text-decoration: none;
+  color: #FFF;
+  background-color: #0066FF;
+}
+footer{
+  padding:20px 0;
+  background-color: #0066FF;
+  padding: 20px 0;
+  text-align:center;
+}
+footer p{
+  margin: 0;
+  font-size: 0.8rem;
+  color: #FFF;
+}
