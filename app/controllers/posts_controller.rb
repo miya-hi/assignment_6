@@ -17,6 +17,10 @@ class PostsController < ApplicationController
       end
     end
   end
+  def confirm
+    @post = Post.new(blog_params)
+    render :new if @post.invalid?
+  end
   private
   def post_params
     params.require(:post).permit(:content)
