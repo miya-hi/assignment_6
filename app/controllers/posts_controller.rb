@@ -12,7 +12,7 @@ class PostsController < ApplicationController
       render :new
     else
       if @post.save
-        redirect_to posts_path
+        redirect_to posts_path, notice:"ツイートを投稿しました！"
       else
         render :new
       end
@@ -26,14 +26,14 @@ class PostsController < ApplicationController
   end
   def update
     if @post.update(post_params)
-      redirect_to posts_path
+      redirect_to posts_path, notice: "ツイートを編集しました！"
     else
       render :edit
     end
   end
   def destroy
     @post.destroy
-    redirect_to posts_path
+    redirect_to posts_path, notice:"ツイートを削除しました！"
   end
   private
   def post_params
