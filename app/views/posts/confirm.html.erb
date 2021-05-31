@@ -1,16 +1,15 @@
 <div class="wrapper">
-<header class="header">
-<div class="logo">Twitter Clone</div>
-<div class="heading">以下の内容で、投稿する</div>
-</header>
-<article>
-<%= form_with(model: @post, url: posts_path, local: true) do |form| %>
-  <%= form.hidden_field :content %>
-  <div class="content"><%= @post.content %></div>
-  <%= form.submit  "投稿" %><br>
-  <%= form.submit "戻る", name: 'back' %>
-<% end %>
-</article>
-<footer>
-</footer>
+  <header class="header">
+    <div class="logo">Twitter Clone</div>
+    <div class="heading">以下の内容で、投稿する</div>
+  </header>
+  <article>
+    <%= form_with(model: @post, url: posts_path, local: true) do |form| %>
+      <%= form.hidden_field :content %>
+      <div class="content"><%= @post.content %></div>
+      <%= form.submit  "投稿" %><br>
+      <%= form.submit "戻る", name: 'back' %>
+    <% end %>
+  </article>
+  <footer><p class="copyright">© 2021 TwitterClone</p></footer>
 </div>
